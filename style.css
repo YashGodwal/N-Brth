@@ -2,11 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
-.birthstone-regular {
+ @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+/* .birthstone-regular {
   font-family: "Birthstone", cursive;
   font-weight: 400;
   font-style: normal;
-}
+} */
+  .heart {
+            font-size: 50px;
+            margin-top: 20px;
+            animation: pulse 1.2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                color: rgba(255, 150, 180, 0.8);
+            }
+
+            50% {
+                transform: scale(1.2);
+                color: rgba(255, 255, 255, 1);
+            }
+
+            100% {
+                transform: scale(1);
+                color: rgba(255, 150, 180, 0.8);
+            }
+        }
 .para {
     font-family: "Birthstone", cursive;
     font-weight: 400;
@@ -34,7 +57,8 @@ html{
 }
 body {
     position: relative;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 28px;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -903,8 +927,11 @@ body {
     position: absolute;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to right, #FF7882, #FF7882 63%);
-    color: white;
+    /* background: linear-gradient(to right, #FF7882, #FF7882 63%); */
+    background: linear-gradient(to bottom right, #63332f, #351010, #0a0002);
+    /* color: white; */
+    color: #ffb700;
+    font-family: "Allura", serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -935,7 +962,8 @@ body {
     height: calc(100%);
 }
 .boxMail .boxMail-container .card1 h3{
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: "Allura", serif;
     font-size: 40px;
     text-transform: uppercase;
     width: 80%;
@@ -960,11 +988,14 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: #FF7882;
+    /* background-color: #FF7882; */
+    background: linear-gradient(to bottom right, #63332f, #351010, #0a0002);
     transition: all 1s;
     overflow: hidden;
-    font-family: "Inter", serif;
-    color: #fff;
+    /* font-family: "Inter", serif; */
+    /* color: #fff; */
+    color: #ffb700;
+    font-family: "Allura", serif;
 }
 .boxMail .boxMail-container:hover .card2-content{
     transform: translate(20px, 20px);
@@ -996,7 +1027,8 @@ body {
     }
 }
 .boxMail .boxMail-container .card2 h2{
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: "Allura", serif;
     padding: 0px 20px;
     text-indent: 20px;
     font-size: 22px;
@@ -1410,14 +1442,15 @@ body {
         }
 
         .message h2 {
-            color: #ff6b6b;
+            color: #9b3131;
             font-size: 2.5rem;
             margin-bottom: 15px;
+            font-family: 'Dancing Script', cursive;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
 
         .message p {
-            color: #cf3abb;
+            color: #cf3a3a;
             font-size: 2.2rem;
             line-height: 1.0;
             max-width: 400px;
