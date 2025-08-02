@@ -20,15 +20,11 @@
 
 <body>
 
-    <audio autoplay loop muted>
-        <source src="assets/wwfy.mp3" type="audio/mpeg">
+    <audio autoplay loop>
+        <source src="./assets/wwfy.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
-
-    <audio id="bg-music" autoplay loop muted>
-        <source src="assets/wwfy.mp3" type="audio/mpeg">
-    </audio>
 
     <div id="wrapper">
         <div class="flag__birthday">
@@ -70,6 +66,7 @@
                         </div>
                     </button>
                 </div>
+
                 <!-- CLAUDE BIRTHDAY CAKE butto  -->
                 <!-- BIRTHDAY CAKE -->
                 <div class="btn">
@@ -79,9 +76,17 @@
                             <i class="fa-regular"></i>
                         </div>
                     </button>
-
                 </div>
-
+                
+                <!-- Suprise -->
+                 <div class="btn">
+                    <button id="btn__letter" onclick="navigateToSurprise()">
+                        <div class="mail">
+                            Surprise Present 🎁
+                            <i class="fa-regular"></i>
+                        </div>
+                    </button>
+                </div>
                 <!-- CLAUDE BIRTHDAY CAKE -->
 
                 <div class="modal-overlay" id="cakeModal">
@@ -288,6 +293,12 @@
 </body>
 
 <script>
+
+ // Navigate to surprise page
+    function navigateToSurprise() {
+      window.location.href = 'surprise.html';
+    }
+
     let datetxt = "4th Aug";
     let datatxtletter = "My love. You are a very special girl. I always silently thank you for coming into my life. Today, I wish you all the best, lots of health, and lots of joy. I always hope we will celebrate many more birthdays like this together. Happy birthday to you.💕";
     let titleLetter = "To you";
